@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "duration": "^0.2.2",
+    "get-folder-size": "^5.0.0",
+    "picocolors": "^1.1.1",
+    "pretty-bytes": "^6.1.1",
+    "prompts": "^2.4.2",
+    "trash": "^9.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": false
+  }
+}
