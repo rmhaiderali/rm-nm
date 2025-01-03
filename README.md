@@ -18,7 +18,13 @@ git clone https://github.com/rmhaiderali/rm-nm.git
 cd rm-nm
 ```
 
-3. **Set a permanent alias (optional):**
+3. **Install dependencies:**
+
+```bash
+npm i
+```
+
+4. **Set a permanent alias (optional):**
 
 ```bash
 echo alias rm-nm=\"node $(pwd)\" >> ~/.bashrc
