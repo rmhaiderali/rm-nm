@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import os from "node:os"
 import { exec } from "node:child_process"
 import trash from "trash"
