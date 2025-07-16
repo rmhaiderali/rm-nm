@@ -7,52 +7,29 @@ A simple, `npkill`-like script to quickly **remove all dependency directories** 
 - `js` JavaScript
 - `py` Python
 
-## 🚀 Setup
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/rmhaiderali/rm-deps.git
-```
-
-2. **Change into the rm-deps directory:**
-
-```bash
-cd rm-deps
-```
-
-3. **Install dependencies:**
-
-```bash
-npm i
-```
-
-4. **Set a permanent alias (optional):**
-
-```bash
-echo alias rm-deps="node $(pwd)" >> ~/.bashrc
-source ~/.bashrc
-```
-
 ## 🛠 Usage
 
-### Remove js dependency directories from current directory and its subdirectories:
+### Arguments
 
 ```bash
-rm-deps . js
+npx github:rmhaiderali/rm-deps [target directory] [language]
+```
+
+### Remove javascript dependency directories from current directory and its subdirectories:
+
+```bash
+npx github:rmhaiderali/rm-deps . js
 ```
 
 ### Remove python dependency directories from a specific directory (e.g., `~/projects`):
 
 ```bash
-rm-deps ~/projects py
+npx github:rmhaiderali/rm-deps ~/projects py
 ```
 
 ## 📌 Notes
 
 - Bash is required to run this script. On Windows, install a Bash environment such as **Git Bash**, **WSL**, or **MSYS2**.
-- Make sure you have a JavaScript runtime installed — either **Node**, **Deno**, or **Bun**.
-- The alias step is optional. You can also run it directly with `[node|deno|bun] [cloned dir] [target dir] [language]`.
 
 ## ⚠️ Warnings
 

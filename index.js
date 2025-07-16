@@ -17,6 +17,8 @@ function run(command) {
   )
 }
 
+process.chdir(import.meta.dirname)
+
 if (!(await run("find . ! -name . -prune -type f")).includes("index.js")) {
   console.log(
     "System's find utility is either missing or lacks POSIX compatibility"
