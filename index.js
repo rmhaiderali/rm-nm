@@ -19,6 +19,7 @@ function run(command) {
   )
 }
 
+const cwd = process.cwd()
 process.chdir(import.meta.dirname)
 
 if (!(await run("find . ! -name . -prune -type f")).includes("index.js")) {
@@ -31,6 +32,8 @@ if (!(await run("find . ! -name . -prune -type f")).includes("index.js")) {
     )
   process.exit(1)
 }
+
+process.chdir(cwd)
 
 function ResolveTasksConcurrently(tasks, concurrency) {
   return Bluebird.map(tasks, (task) => task(), { concurrency })
